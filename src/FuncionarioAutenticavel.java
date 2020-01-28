@@ -1,5 +1,5 @@
 
-public class Administrador extends FuncionarioAutenticavel {
+public abstract class FuncionarioAutenticavel extends Funcionario {
 
 	private int senha;
 
@@ -14,11 +14,4 @@ public class Administrador extends FuncionarioAutenticavel {
 			return false;
 		}
 	}
-
-	@Override
-	public double getBonificacao() {
-		// TODO Auto-generated method stub
-		return 50;
-	}
-
 }
